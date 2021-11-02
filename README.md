@@ -13,7 +13,7 @@ HTTP 1.1 **practically** only allows one outstanding request per TCP connection.
 
   ### Differece between HTTP1.1 vs HTTP2. 
 ---------------------------------------
-
+![This is an Image](https://www.greenlanemarketing.com/wp-content/uploads/2015/03/http-request-flow.jpg)
 ### Year
 - HTTP1.1--> 1997	          
 - HTTP2  -->2015
