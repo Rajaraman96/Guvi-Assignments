@@ -16,7 +16,7 @@ HTTP 1.1 "practically" only allows one outstanding request per TCP connection. B
 
 ### Year
       HTTP1.1--> 1997	          
-      HTTP2-->2015
+      HTTP2  -->2015
 
 
 ### Key Features 
