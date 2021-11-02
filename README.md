@@ -9,57 +9,67 @@ A simple and abstract example would be a restaurant guest and a waiter. The gues
 
 Since, we all know HTTP is protocol that is widely used over internet, HTTP 1.1 has turned into a protocol used for virtually everything on the Internet. HTTP 1.1 version came to picture in 1997, since then the protocol was unchanged, but IETF(Internet Engineering Task Force) revised the protcol and released a newer version of HTTP i.e. HTTP 2.0 in the year 2015.
 
-HTTP 1.1 "practically" only allows one outstanding request per TCP connection. But with HTTP 2.0 we can have multiple request at a time.
+HTTP 1.1 **practically** only allows one outstanding request per TCP connection. But with HTTP 2.0 we can have multiple request at a time.
 
   ### Differece between HTTP1.1 vs HTTP2. 
 ---------------------------------------
 
 ### Year
-      HTTP1.1--> 1997	          
-      HTTP2  -->2015
+- HTTP1.1--> 1997	          
+- HTTP2  -->2015
 
 
 ### Key Features 
 
-      HTTP1.1 -->
-        It supports connection reuse i.e. for every TCP connection there could be multiple requests and responses, and pipelining where the client can request several resources from the server at once. However, pipelining was hard to implement due to issues such as head-of-line blocking and was not a feasible solution.
+- HTTP1.1        
+          
+     It supports connection reuse i.e. for every TCP connection there could be multiple requests and responses, and pipelining where the client can request several resources from the server at once. However, pipelining was hard to implement due to issues such as head-of-line blocking and was not a feasible solution.
 
-      HTTP2-->
-        Uses multiplexing, where over a single TCP connection resources to be delivered are interleaved and arrive at the client almost at the same time. It is done using streams which can be prioritized, can have dependencies and individual flow control. It also provides a feature called server push that allows the server to send data that the client will need but has not yet requested.
+- HTTP2
+       
+     Uses multiplexing, where over a single TCP connection resources to be delivered are interleaved and arrive at the client almost at the same time. It is done using streams which can be prioritized, can have dependencies and individual flow control. It also provides a feature called server push that allows the server to send data that the client will need but has not yet requested.
 
 
 ### Status Code 
 
-      HTTP1.1-->
-        Introduces a warning header field to carry additional information about the status of a message. Can define 24 status codes, error reporting is quicker and more efficient.
+- HTTP1.1. 
+
+     Introduces a warning header field to carry additional information about the status of a message. Can define 24 status codes, error reporting is quicker and more efficient.
       
-      HTTP2-->
-        Underlying semantics of HTTP such as headers, status codes remains the same.
+- HTTP2
+    
+    Underlying semantics of HTTP such as headers, status codes remains the same.
       
 ### Authentication Mechanism
 
-      HTTP1.1-->
-        It is relatively secure since it uses digest authentication, NTLM authentication.
+- HTTP1.1
+
+     It is relatively secure since it uses digest authentication, NTLM authentication.
       
-      HTTP2-->
-        Security concerns from previous versions will continue to be seen in HTTP/2. However, it is better equipped to deal with them due to new TLS features like connection error of type Inadequate_Security.
+-  HTTP2
+     
+     Security concerns from previous versions will continue to be seen in HTTP/2. However, it is better equipped to deal with them due to new TLS features like connection error of type Inadequate_Security.
         
  ### Caching
  
-       HTTP1.1-->
-          Expands on the caching support by using additional headers like cache-control, conditional headers like If-Match and by using entity tags.
+- HTTP1.1
+
+     Expands on the caching support by using additional headers like cache-control, conditional headers like If-Match and by using entity tags.
           
-       HTTP2-->
-          HTTP/2 does not change much in terms of caching. With the server push feature if the client finds the resources are already present in the cache, it can cancel the pushed stream.
+- HTTP2
+     
+     HTTP/2 does not change much in terms of caching. With the server push feature if the client finds the resources are already present in the cache, it can cancel the pushed stream.
        
 
 ### Web Traffic
 
-       HTTP1.1-->
-          HTTP/1.1 provides faster delivery of web pages and reduces web traffic as compared to HTTP/1.0. However, TCP starts slowly and with domain sharding (resources can be downloaded simultaneously by using multiple domains), connection reuse and pipelining, there is an increased risk of network congestion.
+- HTTP1.1
+    
+    HTTP/1.1 provides faster delivery of web pages and reduces web traffic as compared to HTTP/1.0. However, TCP starts slowly and with domain sharding (resources can be downloaded simultaneously by using multiple domains), connection reuse and pipelining, there is an increased risk of network congestion.
           
-        HTTP2-->  
-          HTTP/2 utilizes multiplexing and server push to effectively reduce the page load time by a greater margin along with being less sensitive to network delays.
+- HTTP2  
+    
+    HTTP/2 utilizes multiplexing and server push to effectively reduce the page load time by a greater margin along with being less sensitive to network delays.
           
           
           
