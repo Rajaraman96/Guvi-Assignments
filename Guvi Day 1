@@ -1,4 +1,4 @@
-# Guvi Day 1 -Assignment - 1
+# Assignment - 1 HTTP1 vs HTTP2
 --------
  HTTP  
 --------
@@ -82,7 +82,7 @@ HTTP2 is much faster and more reliable than HTTP1. HTTP1 loads a single request 
 
 
 
-# Guvi Day 1 -Assignment - 2
+# Assignment - 2
 
 ### Objects and it's Internal Representation
 
