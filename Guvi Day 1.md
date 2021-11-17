@@ -84,19 +84,19 @@ HTTP2 is much faster and more reliable than HTTP1. HTTP1 loads a single request 
 
 # Guvi Day 1 -Assignment - 2
 
-### Objects and it's Internal Representation
+## Objects and it's Internal Representation
 
 
 JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. In addition to objects that are predefined in the browser, you can define your own objects. This chapter describes how to use objects, properties, functions, and methods, and how to create your own objects.
 
-##### Objects overview
+### Objects overview
 
 Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. The concept of objects in JavaScript can be understood with real life, tangible objects.
 
 In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics
 
 
-##### Objects and properties
+### Objects and properties
 A JavaScript object has properties associated with it. A property of an object can be explained as a variable that is attached to the object. Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects. The properties of an object define the characteristics of the object. You access the properties of an object with a simple dot-notation:      `objectName.propertyName` .
 
 Like all JavaScript variables, both the object name (which could be a normal variable) and property name are case sensitive. You can define a property by assigning it a value. For example, let's create an object named `myBike` and give it properties named `manufac`, `model`, and `topsped` as follows:
@@ -120,7 +120,7 @@ The above example could also be written using an ***object initializer***, which
 For ex: `myBike.brand //underfined`
 
 
-#### Comparing objects
+### Comparing objects
 
 In JavaScript, objects are a reference type. Two distinct objects are never equal, even if they have the same properties. Only comparing the same object reference with itself yields true.
 
@@ -149,7 +149,7 @@ var fruitbear = {name: 'apple'};`
 ***Output:*** `{ name: "grape" }`, instead of `{ name: "apple" }`
 
 
-#### Using ***this*** for object references
+### Using ***this*** for object references
 
 JavaScript has a special keyword, ***this***, that you can use within a method to refer to the current object. For example, suppose you have 2 objects, Manager and Intern. Each object have their own name, age and job.  In the function sayHi(), notice there is this.name. When added to the 2 objects they can be called and returns the 'Hello, My name is' then adds the name value from that specific object. As shown below.
 
