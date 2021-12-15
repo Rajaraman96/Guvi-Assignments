@@ -1,4 +1,4 @@
-var Resume =[
+var Resume =
     {Name:'Rajaraman Sreenivasan',
     Address:"Temple Nagar 103 ,Vayalil Puthen Madom, Padinjattinkara Kottarakkara, Kollam,  Kerala, Pincode: 691506",
     EmailAddress : "rajaraman4@outlook.com",
@@ -20,7 +20,7 @@ var Resume =[
     Declaration:"I do hereby declare that the above particulars of facts and information stated are true, correct and complete to the best of my belief and knowledge."}
 
 
- ];
+ ;
 
 // let i=0
 //  for(let x of Resume){
@@ -84,15 +84,23 @@ var Resume =[
 // // `)
 // //     };
 ///----------------------------------------------------------------------
-for (let i = 0; i < Resume.length; i++) {
-    console.log(Resume[i])
+for (let i in Resume) {
+    console.log(`${i}: ${Resume[i]}`)};
 
-    
-for (const key in Resume[i]) {
+ ///----------------------------------------------------------------------   
+// for (const key in Resume[i]) {
 
-    if (typeof(Resume[i][key]==Object )){
-        for (const id in Resume[i][key]){
-            console.log(`${id}: ${Resume[i][key][id]}`)}
-    }
-    console.log(`${key}: ${Resume[i][key]}`)}
-};
+//     if (typeof(Resume[i][key]===Object )){
+//         for (const id in Resume[i][key]){
+//             console.log(`${id}: ${Resume[i][key][id]}`)};
+//     }
+//     console.log(`${key}: ${Resume[i][key]}`)}
+// };
+///----------------------------------------------------------------------
+
+
+const keys = Object.keys(Resume);
+console.log(keys);
+keys.forEach((key, index) => {
+    console.log(`${key}: ${Resume[key]}`);
+});
