@@ -84,8 +84,8 @@ var Resume =
 // // `)
 // //     };
 ///----------------------------------------------------------------------
-for (let i in Resume) {
-    console.log(`${i}: ${Resume[i]}`)};
+// for (let i in Resume) {
+//     console.log(`${i}: ${Resume[i]}`)};
 
  ///----------------------------------------------------------------------   
 // for (const key in Resume[i]) {
@@ -99,8 +99,22 @@ for (let i in Resume) {
 ///----------------------------------------------------------------------
 
 
-const keys = Object.keys(Resume);
-console.log(keys);
-keys.forEach((key, index) => {
-    console.log(`${key}: ${Resume[key]}`);
-});
+// const keys = Object.keys(Resume);
+// console.log(keys);
+// keys.forEach((key, index) => {
+//     console.log(`${key}: ${Resume[key]}`);
+// });
+
+///----------------------------------------------------------------------
+
+// const keys = Object.keys(Resume);
+// const iterate = (Resume) => {
+//     keys.forEach(key => {
+
+//     console.log(`key: ${key}, value: ${Resume[key]}`)
+
+//     if (typeof Resume[key] === 'object') {
+//             iterate(Resume[key])
+//         }
+//     })
+// }
