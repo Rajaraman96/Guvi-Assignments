@@ -1,0 +1,219 @@
+Q1. Find the culprit 
+<br>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <code>
+        alert( "I’m JavaScript!');
+    </code>
+        Whats the error in this ? <br><br>
+        Answer: <code><b>( "I’m JavaScript!');</b></code><b> Single-Quote/Apostrophe(')</b> given in the end of the statement should be replaced with <b>Double-quote("")</b>.<br>
+         Script should be <code><b>
+        alert( "I’m JavaScript!");
+    </b></code>
+
+      
+
+
+
+
+    <br><br><br>
+    -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+
+
+Q2.Find the culprit and invoke the alert
+
+
+    <script src="script.js"></script>
+    <p>Answer: The Alert were not invoked because of using invalid double quotes were used in the script before.</p>
+    
+    <br>
+
+    -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+Q3. Explain the below how it works
+
+    <br><br><br>
+
+    <code>alert("I'm JavaScript!");</code> Output : I'm JavaScript!<br><br>
+    <code>alert('Hello') </code>Output: Hello<br><br>
+    <code>alert(`Wor <br>
+        ld`)</code> Output:1st line = "Wor", 2nd line = "ld"<br><br>
+    <code>alert(3 +<br>
+        1<br>
+        + 2);</code>Output: 6 <br>
+
+    -------------------------------------------------------------------------------------------------------------------------------------
+        <br><br>
+
+Q4.Fix the below to alert Guvi geek<br><br>
+
+    <p>The JS were correct, added <b>" "</b> inbetween the sum of fname and lname</p>
+
+    <br>
+
+    -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+Q5. Fix the below to alert hello Guvi geek
+    <br><br>
+    -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+Q6. Fix the below to alert sum of two numbers
+
+    <br><br>
+    <p>Previously the js will take Input through the prompt were taken as <b>String</b><br><br>
+    Now, i have converted the input into Integer using the property <code>parseInt()</code><br>
+    The result will looks like :<br>
+
+    <code>let a = prompt("First number?");<br>
+        let b = prompt("Second number?");<br>
+        <strong>result = parseInt(a)+ parseInt(b);</strong><br>
+        alert(result);<br></code>
+
+    </p>
+    <br><br>
+    -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+Q7. Fix the below to alert sum of two numbers
+    <br><br>
+    <p>Previously the js will take Input through the prompt were taken as <b>String</b><br><br>
+    Now, i have converted the input into Integer using the property <code>parseInt()</code><br>
+    The result will looks like :<br>
+
+    <code> <strong>let c = parseInt(prompt("First number?"));</strong>        <br>
+        <strong>let d = parseInt(prompt("Second number?"));</strong>          <br>
+        alert(c+d);<br></code>
+
+    </p>
+    <br><br>
+    -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br> 
+    
+    
+Q8. If you run the below scritpt you will get “Code is Blasted”<br> 
+    Explain Why the Code is blasted and how to diffuse it and get “Diffused”.<br> 
+    <br><br>
+    <p>Answer: The logical value are numbers given inside <b>Apostrophe</b>. <br>Remove Apostrophe and the loop will check the condition given,<br>Automattically returns false and <b>else</b> part will be printed in console.</p>
+    <br><br>
+        -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+Q9. How to get the success in console.
+    <br><br>
+    <p> Answer: The input/prompt takes both string String and Integer, Hence the condition goes true and <b>'OMG it works for any number inc 0'</b>were printed.</p>
+    <p> To get <b>'success'</b> in console, I have added <strong>!parseInt</strong>before prompt. It checks that the input is Integer or not. If it is an Integer it will print Success, If it is a String then it prints the other value.</p>
+    <p><strong><code>let a = !parseInt(prompt("Enter a number?"));</code></strong></p>
+    <br><br>
+            -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+Q10. How to get the correct score in console.
+
+    <p>Answer: Use parseInt before promt</p>
+    <p><strong><code>let value = parseInt(prompt('How many runs you scored in this ball'));
+    </code></strong></p>
+
+    <br><br>
+            -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+Q11. Fix the code to welcome the Employee
+
+    <br><br>
+            -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+Q12. Fix the code to welcome the boss
+
+    <p>Answer: Remove the Declaration 'let' from the condition and check each condition i.e.</p><strong><code>if (message === null || message === 2 || message === undefined )</code></strong>
+    <br><br>
+            -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+Q13. Fix the code to welcome the boss
+
+
+    <p>Answer: Change the value of lock to message or just remove the value of lock. </p><strong><code>lock = message</code></strong>
+    <br><br>
+            -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+
+Q14. Fix the code to welcome the boss
+    <p>Answer: Change the value of lock to message or just remove the value of lock. </p><strong><code>lock = message</code></strong>
+    <br><br>
+            -------------------------------------------------------------------------------------------------------------------------------------
+    <br><br>
+
+
+Q15. Change the code to print
+
+
+    <p>Answer: <strong><code>let i =4;
+        while (i) {
+          console.log( --i );
+        }</code></strong></p>
+        <br><br>
+        -------------------------------------------------------------------------------------------------------------------------------------
+        <br><br>
+
+Q16. Change the code to print 1 to 10 in 4 lines
+
+        <p>Answer:<strong><br><code>for(let num = 1;  num<=10; num++){<br>
+            console.log(num)
+            }</code></strong></p>
+            <br><br>
+        -------------------------------------------------------------------------------------------------------------------------------------
+            <br><br>
+
+Q17. Change the code to print even numbers
+
+        <br><br>
+        <p> Answer: We just need to change the adding figure to 2</p>
+        <p> <strong><b><code>for (let num = 2; num <= 20; num += 2) {
+            console.log(num)
+        }</code></b></strong></p>
+
+            <br><br>
+        -------------------------------------------------------------------------------------------------------------------------------------
+            <br><br>
+
+
+Q18. Change the code to print all the gifts
+
+        <br><br>
+        <p> Answer: Use template literal instead of single or double codes.</p>
+
+        <br><br>
+                -------------------------------------------------------------------------------------------------------------------------------------
+        <br><br>
+
+Q19. Fix the code to disarm the bomb.
+
+        <br><br>
+        <br><br>
+        -------------------------------------------------------------------------------------------------------------------------------------
+        <br><br>
+
+Q20. Whats the msg printed and why?
+
+
+
+
+
+
+
+</body>
+</html>
